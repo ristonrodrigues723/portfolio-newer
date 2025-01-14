@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Playwrite+ES+Deco+Guides&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Italianno&display=swap" rel="stylesheet">
+
+
+    <style>
+body{
+    background-color: #F4F4F4;
+}
+        section#contact{
+            padding: 60px 40px;
+            margin :60px auto;
+max-width: 800px;
+
+border-radius:20px;
+box-shadow:0 4px 15px rgba(5, 68, 94, 0.1)
+        }
+    section#contact2{
+        color: #05445E;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    section#contact h2{
+        display: flexbox;
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 40px;
+        color: #000;
+    }
+    section#contact *,
+/* section#contact form,
+section#contact .form-group,
+section#contact label,
+section#contact input,
+section#contact textarea {
+    background-color: white !important;
+} */
+    section#contact form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    section#contact .form-group{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    section#contact label{
+        font-size: 1,.1rem;
+        color:whitesmoke;
+        margin-bottom: 8px;
+        font-weight: 500;
+    }
+
+   section#Education{
+    padding: 40px;
+    margin :60 auto;
+    justify-content: center;
+    gap: 40px;
+    
+    display: flex;
+background-color: #05445E;
+height: max-content;
+}
+section#contact .required::after{
+    content:"*";
+    color: #ff4444;
+    margin-left: 4px;
+}
+section#contact input.error,
+section#contact textarea.error{
+    border-color:#ff4444 ;
+}
+
+section#contact .success-message {
+    text-align: center;
+    color: #28a745;
+    padding: 10px;
+    border-radius:8px;
+    background: rgba(40,168,70,0.1);
+    margin-top:20px;
+}
+
+       
+        #group{
+            display: flex;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            background-color: #05445e;
+            padding:10px 20px;
+            box-shadow:0 2px  5px rgba(0,0,0,0.1);
+            padding-right: 25px;
+            margin-left:-25px;
+        }
+        
+        #name1{
+            display: flex;
+           justify-content:space-between;
+           text-decoration: none;
+           color:#D4F1F4;
+           font-style: italic;
+           padding-left: 10px;
+           font-family: "Barblow Condensed",serif;
+           padding:0 20px;
+           transition: color 0.3 ease;
+        }
+        #name1:hover{
+            color:#189AB4;
+        }
+        #header a{
+            text-decoration: none;
+            color: #D4F1F4;
+            transition: color 0.3s ease;
+            margin:0 10px;
+            
+        }
+
+        #header a:hover{
+            color:#189AB4;
+        }
+        #header li{
+            text-decoration: none;
+            list-style: none;
+            display: inline-flex;
+            padding: 10px 15px;
+            align-items:center;
+
+           position: relative;
+           text-transform: uppercase;
+           font-family: "Anton", serif;
+           font-weight: 400;
+           font-style: normal;
+           margin:0 5px;
+          
+        }
+        #header{
+            display: flex;
+            /* justify-content: flex-end; */
+            align-items:center;
+            margin:0;
+            padding:0;
+            
+        }
+
+        #header img{
+            width:20px;
+            height:20px;
+            filter:invert(1);
+            margin:0;
+        }
+        #header li::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 25%;
+            width: 0%;
+            height: 2px;
+            background-color:#05445E;
+            box-shadow:0px 0px 8px #4682B4;
+            
+        }
+        #header li:hover::after{
+            width: 100%;
+            transition: 1s;
+        }
+
+
+        
+        /* *{
+            background-color:  #D4F1F4;
+        } */
+        #intro{
+            font-family: "Italianno", serif;
+            font-weight: 2000;
+            font-style: normal;
+            font-size: 250%;
+        }
+        #intro1{
+           display:flex;
+           justify-content: center;
+           margin-top: -30px;
+        }
+        #Home{
+            margin: 150px auto;
+            display: block;
+            position: relative;
+            text-align: center;
+            border: 2px solid black;
+            box-sizing: border-box;
+            width: 40%;
+            border-radius: 30px;
+        }
+        @property --angle{
+            syntax: "<angle>";
+            initial-value: 0deg;
+            inherits: false;
+        }
+        #Home {
+            margin: 150px auto;
+            display: block;
+            position: relative;
+            text-align: center;
+            border: 6px solid transparent;
+            box-sizing: border-box;
+            width: 40%;
+            border-radius: 30px;
+            overflow: hidden;
+            background: linear-gradient(to right, #D4F1F4, #D4F1F4) padding-box,
+                        conic-gradient(from var(--angle), transparent 90%, #476581,red,green) border-box;
+            animation: 3s spin linear infinite;
+        }
+        @property --angle {
+            syntax: "<angle>";
+            initial-value: 0deg;
+            inherits: false;
+        }
+        @keyframes spin {
+            from {
+                --angle: 0deg;
+            }
+            to {
+                --angle: 360deg;
+            }
+        }
+        #About { 
+            margin-top: 250px;
+            display: flex; 
+            align-items: center; 
+            padding: 20px;
+         }
+          #image {
+              
+              margin-top: 50px;
+              border-radius: 10px;
+              margin-right: 25px;
+
+
+             }
+          #About p
+            { 
+             font-family: "Barlow Condensed", serif;
+             font-weight: 400;
+              font-style: normal;
+              font-size: 30px; 
+              /* margin-bottom: 0; */
+              display: relative;
+              margin-left: 25px;
+             }
+             /*this caused all th problem- #Certifications {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 100vh;
+} */
+
+/* certification flexbox dstyle hidden - cards in a single roe uses flexbox and when user clicks show more more certificates are shown*/
+#Certifications {
+    padding: 50px 20px;
+    background: #05445E;
+    margin: 40px auto;
+
+}
+
+#Certifiactions h1{
+    text-align: center;
+    color:#D4F1F4;
+    margin:40px auto;
+}
+
+/* .certificate-container {
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    justify-content: center;
+    max-width:1200px;
+    margin:0 auto;
+
+} */
+
+.certificate-card {
+    flex:0 1 calc(33.333% -30px);
+    min-width:300px;
+    max-width:350px;
+    max-height: 450px;
+    background:#ffffff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    transition:transform 0.3s ease;
+    cursor: pointer;
+    margin-bottom:20px;
+
+
+}
+
+.certificate-card:hover{
+    transform:translateY(-5px);
+}
+
+.certificate-image{
+    width:100%;
+    height:200px;
+    object-fit:contain;
+    padding:10px;
+    background:#f5f5f5;
+    max-width:400px;
+    display:block;
+    margin:0 auto;
+
+}
+
+.certificate-content{
+    padding:20px;
+}
+
+.certificate-title{
+    font-size:1.5 rem;
+    color:#05445E;
+    margin-bottom:10px;
+}   
+
+/* updations 5to the certification section are going-on so it expands non click */
+.certificate-issuer{
+    color:#666;
+    margin-bottom:10px;
+
+}
+
+.certificate-info{
+    color:#333;
+    font-size:0.9rem;
+    line-height:1.5;
+}
+
+.certificate-link{
+display:inline-block;
+margin-top:15px;
+
+color:#189AB4;
+text-decoration:none;
+
+}
+
+.certificate-link:hover{
+    text-decoration:underline;
+}
+
+.show-more-btn{
+    display:block;
+    margin:30px auto 0;
+    padding: 12px 24px;
+    background:#189AB4;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    transition: background 0.3s ease;
+
+}
+
+.show-more-btn:hover{
+    background:#05445E;
+}
+
+.certificate-modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    z-index:1000;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+
+      
+}
+.certificate-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    justify-content:center;
+    max-width:1200px;
+    margin:0;
+    padding:20px;
+    position:relative;
+}
+
+.model-content{
+    position: relative;
+    max-width:90%;
+    max-height:90vh;
+    background:white;
+    position:relative;
+    border-radius:8px;
+    overflow:hidden;
+    padding:8px;
+}
+
+.modal-content img {
+    display:block;
+    max-width:100%;
+    max-height:90vh;
+    height:auto;
+    max-height:90vh;
+    object-fit:contain;
+    border-radius:8px;
+    background:white;
+    padding:20px;
+    overflow:hidden;
+
+}
+.close-modal{
+    position:absolute;
+    top:10px;
+    right:10px;
+    font-size:20px;
+    cursor:pointer;
+    background:white;
+    border:none;
+    border-radius:50%;
+    width: 30px;
+    height:30px;
+    line-height:30px;
+
+
+    z-index:1001;
+
+    padding:5px;
+    box-shadow:0 2px 4px rgba(0,0,0,0.2);
+
+}
+
+.close-modal:hover{
+    background:#f0f0f0;
+}
+
+
+img {
+    margin: 25px;
+    max-height: 215px;
+}
+.hidden-cards{
+    display:none;
+    width:100%;
+}
+
+.hidden-cards.show{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    justify-content:center;
+    width:100%;
+}
+
+
+
+#Skills {
+    padding: 50px 20px;
+    margin-top: 50px;
+}
+
+#Skills h1 {
+    text-align: center;
+    font-family: "Anton", serif;
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.skill-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-category {
+    font-family: "Barlow Condensed", serif;
+    font-size: 24px;
+    color: #05445E;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #D4F1F4;
+    padding-bottom: 10px;
+}
+
+.skill-item {
+    margin-bottom: 15px;
+}
+
+.skill-name {
+    font-family: "Barlow Condensed", serif;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #05445E, #189AB4);
+    transition: width 1s ease-in-out;
+}
+
+.skill-level {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.skill-card img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+#footer {
+    background-color: #05445E;
+    padding: 60px 0 30px 0;
+    margin-top: 60px;
+    position: relative;
+    box-shadow:0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: -25px;
+}
+
+#footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #189AB4, #D4F1F4, #189AB4);
+    box-shadow: 0 0 15px rgba(212, 241, 244, 0.5);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;  
+    gap: 40px;
+    padding: 0 30px;
+}
+
+.footer-section {
+    /* background-color: transparent; */
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-section h3 {
+    color: #D4F1F4;
+
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+   margin-bottom:20px;
+   
+    /* background-color: transparent; */
+}
+
+.footer-section p, .footer-section a {
+    color: #D4F1F4;
+    font-family: "Barlow Condensed", serif;
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 5px 0;
+    background-color: transparent;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-section h3{
+    text-align: center;
+    font-size:  45px;
+    flex: content;
+}
+.footer-section a{
+    padding: 10px;
+    font-size: 1.2rem;
+}
+.footer-section a:hover {
+    color: #189AB4;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: transparent;
+}
+
+.footer-social {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+}
+.footer-social a{
+    display: flex;
+    align-items: center;
+    color: #D4F1F4;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.footer-social a img{
+    margin-left:8px;
+    filter: invert(1);
+    width:20px;
+    height: 20px;
+}
+footer-social a:hover{
+    color: #189AB4;
+}
+.copyright {
+    text-align: center;
+    color: #D4F1F4;
+    font-family: "Barlow Condensed", serif;
+    font-size: 1rem;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(212, 241, 244, 0.1);
+    background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        padding:20px 10px;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    #group{
+        padding:10px;
+    }
+    #header{
+        display:none;
+    }
+    
+    .mobile-menu-btn{
+        display:block;
+        color: #D4F1F4;
+        font-size:24px;
+        cursor:pointer;
+    }
+    .footer-social {
+        justify-content: center;
+        flex-direction:column;
+        align-items: center;
+        gap:15px;
+    }
+    #name1{
+        font-size:1.2rem;
+    }
+    .footer-links {
+        align-items: center;
+    }
+}
+section {
+    background: #05445E;
+    border-radius: 20px;
+    margin: 40px auto;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(5, 68, 94, 0.1);
+    max-width: 1200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 102vh;
+    background-color: #476581;
+
+}
+
+.edu-entry{
+    float: left;
+    width: 45%;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.edu-entry p{
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.edu-entry h2{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+
+
+}
+.edu-entry ul{
+list-style-type: disc;
+margin-left: 20px;
+}
+.edu-entry li{
+font-size: 0.9rem;
+margin-bottom: 5px;
+}
+
+section#contact input,
+section#contact textarea {
+    padding: 12px 16px;
+    border :2px solid #e0e0e0;
+    border-radius: 8px;
+    font-family: "Barlow Condensed", serif;
+    font-size: 1rem;
+    color: #333;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+}
+section#contact input:focus,
+section#contact textarea:focus{
+    outline: none;
+    border-color: #189AB4
+    ;
+    box-shadow: 0  0 0 3px rgba(24,153,180,0.1);
+    background: #ffffff;
+
+}
+section#contact textarea{
+    min-height: 150px;
+    resize: vertical;
+}
+section#contact button{
+    margin-top: 20px;
+    padding: 14px 28px;
+    background: #05445E;
+    color: #ffffff;
+    border:none;
+    border-radius: 8px;
+    font-family: "Barlow Condensed", serif;
+font-size: 1.1rem;
+font-weight: 500;
+cursor: pointer;
+}
+section#contact button:hover{
+    background: #189AB4;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(24 ,155,180,0.2);
+}
+section#contact button:active{
+    transform:translateY(0) ;
+}
+
+#map-container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 50px auto;
+    border: 5px solid #189AB4;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+}
+
+#map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+}
+
+#map-container small a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #05445E;
+    font-weight: bold;
+    font-family: "Barlow Condensed", serif;
+    transition: color 0.3s ease;
+}
+
+#map-container small a:hover {
+    color: #189AB4;
+}
+
+@media (max-width: 768px) {
+    #map-container {
+        margin: 20px auto;
+        padding: 0;
+        border: 3px solid #189AB4;
+    }
+
+    #map-container iframe {
+        height: 300px; 
+    }
+}
+
+@media (max-width: 480px) {
+    #map-container iframe {
+        height: 250px; 
+    }
+}
+
+
+ </style>
+</head>
+<body>
+<div id="group">
+    <a id="name1" href="https://www.linkedin.com/in/riston-rodrigues-08a32224b/" target="_blank"> <h1 >Riston Rodrigues</h1></a>
+    <ul id="header">
+        <li><a href="#Home">Home</a><img src="images/home_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"height="25px" width="25px"></li>
+        <li><a href="#About">About</a><img src="images/man_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"height="25px" width="25px"></li>
+        <li><a href="#Education">Education</a><img src="images/school_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"height="25px" width="25px"></li>
+        <li><a href="#Certifications">Certifications</a><img src="images/verified_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"height="25px" width="25px"></li>
+        <li><a href="#Skills">Skills</a><img src="images/computer_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"height="25px" width="25px"></li>
+        <li><a href="#Contact">Contact</a><img src="contact_phone_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"height="25px" width="25px"></li>
+
+        </ul>
+</div>
+<section id="Home">
+        <h1 id="intro">Riston Rodrigues</h1>
+        <h2 id="intro1">A passoniate Developer</h2>
+</section>
+<section id="About">
+        <div id="image">
+        <img src="images/circlecroped.png" alt="my_image" width="200" height="200">    
+        </div>
+        <div>
+    <p>Hi, I'm Riston Rodrigues. I love to build responsive websites and robust Android applications. With a background in Software Engineering, I have honed my skills in Web development, App development and have worked on projects that have helped me grow both professionally and personally.</p>
+    <p>I'm particularly interested in AI and love to try new stuff. In my free time, I enjoy exploring new technologies. Looking ahead, I aim to improve my coding and analytical skills.</p>
+    <p>Feel free to explore my portfolio to see some of the projects I've worked on. I'm always open to new opportunities and collaborations!</p>
+        </div>
+</section>
+<section>
+    <h1>location</h1>
+    <div id="map-container">
+    <iframe
+    id ='map-frame'
+    /* width="600px"
+    height="450px" */
+    style="border:0"
+    loading="lazy"
+    allowfullscreen 
+    referrerpolicy="no-refferer-when-downgrade"
+
+    src="https://www.openstreetmap.org/export/embed.html?bbox=72.7967%2C19.3800%2C72.8667%2C19.4900&layer=mapnik&marker=19.4167%2C72.8333">
+    </iframe>
+    <br/>
+    <small><a href="https://www.openstreetmap.org/?mlat=19.4167&mlon=72.8333#map=13/19.4167/72.8333" target="_blank">View Larger Map</a></small>
+</div>
+
+
+
+    
+    
+    
+</section>
+<section id="Education">
+    <div class="edu-entry">  
+    <h1>Education</h1><br>
+    <h2>Diploma in Computer Engineering</h2>
+    <p><strong>2022 - Present</strong></p>
+    <ul><li>Studying various aspects of computer engineering</li>
+       <li>Focusing on software development and programming</li>
+       <li>Participating in college-level technical projects</li>
+    </ul>
+    </div>
+    <div class="edu-entry">  
+    <h1>Education</h1><br>
+    <h2>Secondary School Certificate (SSC)</h2>
+    <p>Graduated 2022</p>
+    <ul><li>Completed secondary education with a focus on sciences and mathematics</li>
+       <li>Focused on solving problems and improving analytical thinking</li>
+       <li>developed an early interest in coding</li>
+    </ul>
+    </div>
+
+</section>
+
+
+        
+        
+
+    
+</section> 
+
+<section id="Certifications">
+    <h1>Certifications</h1> 
+    <div class="certificate-container">
+        <!-- First Certificate -->
+        <div class="certificate-card" data-certificate="AI900">
+            <img src="ai-900.png" alt="AI-900 Certificate" class="certificate-image">
+            <div class="certificate-content">
+                <h3 class="certificate-title">AI-900: Azure AI Fundamentals</h3>
+                <p class="certificate-issuer">Issued By Microsoft</p>
+                <p class="certificate-info">Fundamental understanding of machine learning and artificial intelligence concepts based on Microsoft Azure</p>
+                <a href="#" class="certificate-link" onclick="event.stopPropagation()">View Certificate</a>
+            </div>
+        </div>
+        
+        <!-- Second Certificate -->
+        <div class="certificate-card" data-certificate="java">
+            <img src="mooc java.png" alt="Java certificate" class="certificate-image">
+            <div class="certificate-content">
+                <h3 class="certificate-title">Java Programming PT1</h3>
+                <p class="certificate-issuer">University of Helsinki</p>
+                <p class="certificate-info">Comprehensive course covering Java Fundamentals, Object-oriented Programming, and Data Structures</p>
+                <a href="#" class="certificate-link" onclick="event.stopPropagation()">View Certificate</a>
+            </div>
+        </div>
+        
+        <!-- Third Certificate -->
+        <div class="certificate-card" data-certificate="web">
+            <img src="gitandgithub.jpeg" alt="Git And Github" class="certificate-image">
+            <div class="certificate-content">
+                <h3 class="certificate-title">Web Development</h3>
+                <p class="certificate-issuer">FreeCodeCamp</p>
+                <p class="certificate-info">Git and GitHub Fundamentals: Version Control, Collaboration, and Repository Management</p>
+
+                <a href="#" class="certificate-link" onclick="event.stopPropagation()">View Certificate</a>
+            </div>
+        </div>
+
+        <!-- Hidden Cards Section -->
+        <div class="hidden-cards">
+            <!-- Fourth Certificate -->
+            <div class="certificate-card" data-certificate="career_essentials_in_gen_ai">
+                <img src="careeressentials.jpeg" alt="Career Essentials in Generative AI" class="certificate-image">
+                <div class="certificate-content">
+                    <h3 class="certificate-title">Career Essentials in Generative AI</h3>
+                    <p class="certificate-issuer">Microsoft</p>
+                    <p class="certificate-info">Overview of skills needed to apply generative AI in career. Core concepts of Artificial Intelligence and Generative AI Functionality</p>
+                    <a href="#" class="certificate-link" onclick="event.stopPropagation()">View Certificate</a>
+                </div>
+            </div>
+
+            <!-- Fifth Certificate -->
+            <div class="certificate-card" data-certificate="career_essentials_in_soft_dev">
+                <img src="careeressentials.jpeg" alt="Career Essentials in Software Development" class="certificate-image">
+                <div class="certificate-content">
+                    <h3 class="certificate-title">Career Essentials in Software Development</h3>
+                    <p class="certificate-issuer">Microsoft</p>
+                    <p class="certificate-info">Overview of skills needed to succeed in a career in Software Development. Core Concepts and Structure of programming languages and how they are applied</p>
+                    <a href="#" class="certificate-link" onclick="event.stopPropagation()">View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="certificateModal" class="certificate-modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal()">&times;</button>
+            <img id="modal-img" src="" alt="Certificate Preview">
+        </div>
+    </div>
+
+    <!-- Show More Button -->
+    <button class="show-more-btn" onclick="showMoreCertificates()">Show More</button>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="Skills">
+    <h1>Skills & Expertise</h1>
+    <div class="skills-container">
+        <!-- Programming Languages Card -->
+        <div class="skill-card">
+            <h2 class="skill-category">Programming Languages</h2>
+            <div class="skill-item">
+                <div class="skill-name">Python</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+                <div class="skill-level">Advanced</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">Java</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%"></div>
+                </div>
+                <div class="skill-level">Advanced</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">JavaScript</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%"></div>
+                </div>
+                <div class="skill-level">Intermediate</div>
+            </div>
+        </div>
+    <div class="skill-card">
+            <h2 class="skill-category">Web Development</h2>
+            <div class="skill-item">
+                <div class="skill-name">HTML5 & CSS3</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+                <div class="skill-level">Expert</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">Javascript</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%"></div>
+                </div>
+                <div class="skill-level">Intermediate</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">Node.js</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 50%"></div>
+                </div>
+                <div class="skill-level">beginner</div>
+            </div>
+        </div>
+        <div class="skill-card">
+            <h2 class="skill-category">Soft Skills</h2>
+            <div class="skill-item">
+                <div class="skill-name">Problem Solving</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+                <div class="skill-level">Advanced</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">Team Collaboration</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%"></div>
+                </div>
+                <div class="skill-level">Advanced</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">Communication</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 88%"></div>
+                </div>
+                <div class="skill-level">Advanced</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <h2>Get In Touch</h2>
+    <form action="" method="post">
+        <div class="form-group">
+            <label for="name" class="reqired">Name:</label>
+            <input type="text" id="name" name="name" required >  
+            </div>
+        
+        <div class="form-group">
+            <label for="email" class="required">Email:</label>  
+            <input type="email" id="Email" name="email" required> 
+            </div>
+     <div class="form-group">
+        <label for="Message" class="required">Message:</label>  
+        <textarea name="message" id="message" cols="40" rows="5" required></textarea>   </div>
+ <button type ="submit">Send Message</button>
+    </form>
+</section>
+<footer id="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Connect</h3>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/riston-rodrigues-08a32224b/" target="_blank">LinkedIn <img src="linkedin-logo.png" alt="LinkedIn"></a>
+                <a href="mailto:ristonrodrigues1212007@gmail.com">Email <img src="email.png" alt="Email"></a>
+                <a href="https://github.com/RistonRodz" target="_blank">GitHub <img src="github-sign.png" alt="GitHub"></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        &copy; 2024 Riston Rodrigues. All rights reserved.
+    </div>
+</footer>
+
+<script>
+    let isShowingMore = false;
+
+function showMoreCertificates() {
+    const hiddenCards = document.querySelector('.hidden-cards');
+    const showMoreBtn = document.querySelector('.show-more-btn');
+
+    if (!isShowingMore) {
+        hiddenCards.classList.add('show');
+        showMoreBtn.textContent = 'Show Less';
+        isShowingMore = true;
+    } else {
+        hiddenCards.classList.remove('show');
+        showMoreBtn.textContent = 'Show More';
+        isShowingMore = false;
+    }
+}
+
+function showCertificate(id) {
+    console.log('showing certificate:', id);
+    const modal = document.getElementById('certificateModal');
+    const modalImage = document.getElementById('modal-img'); // Changed to match HTML
+    
+    // Fix template literal syntax
+    const certificateCard = document.querySelector(`[data-certificate="${id}"]`);
+
+    if (!certificateCard) {
+        console.error('Certificate card not found:', id);
+        return; // Added return statement
+    }
+
+    const img = certificateCard.querySelector('.certificate-image');
+    if (!img) {
+        console.error('Image not found in card:', id);
+        return;
+    }
+
+    modalImage.src = img.src; // Fixed: img.Src -> img.src (JavaScript is case-sensitive)
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+    const modal = document.getElementById('certificateModal');
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+window.onclick = function(event) {
+    const modal = document.getElementById('certificateModal');
+    if (event.target == modal) {
+        closeModal();
+    }
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.certificate-card');
+    cards.forEach(card => {
+
+        card.addEventListener('click', function() {
+            const certificateId = this.getAttribute('data-certificate');
+            showCertificate(certificateId);
+        });
+    });
+});
+    
+    </script>
+</body>
+</html>
